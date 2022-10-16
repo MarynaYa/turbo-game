@@ -1,2 +1,27 @@
-@import './common';
-@import './example';
+//BASE
+@import './base/common';
+@import './base/bases';
+@import './base/contauner';
+@import './base/mixins';
+
+//COMPONENTS
+@import './components/btn';
+@import './components/cosial';
+@import './components/header-menu';
+@import './components/login';
+@import './components/logo';
+@import './components/register';
+@import './components/rules';  
+
+//LAYOUTS
+@import './layouts/about';
+@import './layouts/category';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/trailer';
+@import './layouts/play.scss';
+@import './layouts/prize.scss';
+
+//UTILS
+@import './utils/variables';

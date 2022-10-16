@@ -12,18 +12,18 @@ body {
 
 section {
     // mini-mobile sreen from 320px
-    @include mq(mobile-only) {
-max-width: 767px;
+    @media screen and (min-width: 320px) {
+width: 320px;
 padding-top: 10px;
     }
     // tablet sreen from 768px
-    @include mq(tablet) {   
-min-width: 768px;     
+    @media screen and (min-width: 768px) {   
+width: 768px;     
 padding-top: 40px;
     }
     // desktop sreen from 1280px
-    @include mq(desktop) {
-max-width: 1400px;
+    @media screen and (min-width: 1400px){
+width: 1400px;
 padding-top: 40px;
     }
 }
