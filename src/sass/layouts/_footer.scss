@@ -1,0 +1,214 @@
+    /*footer*/
+    .footer {
+        display: flex;
+        flex-wrap: wrap;   
+        background-image: linear-gradient(to right, #010320 30%, #050d79 70%);    
+    }
+   .footer-container {
+    width: 1400px;
+   }
+    .box-logo {
+        display: block;
+        padding: 20px;        
+    }
+   
+    .contact__list {
+            display: block;
+            padding: 0;
+            margin-right: 50px;
+        }
+    
+    .footer-text__adress {
+            text-decoration: none;
+            height: auto;
+            font-style: 12px;
+            font-family: Roboto;
+            letter-spacing: 0.03em;
+            color: var(--text-color);
+            text-align: left;
+        }
+    
+    .join {
+        display: block;
+        padding: 0;
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+    }
+    .join-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .join-list__item {
+            margin-right: 10px;
+        }
+    .join-list__item:last-child {
+            margin-right: 0px;
+        }
+    .join-list__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;   
+            width: 44px;
+            height: 44px;
+            background-color: #FFFFFF1A;
+        
+            border-radius: 50%;  
+            
+            transition-property: background-color;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 250ms;
+        }
+    .join-list__link:hover, .join-list__link:focus {
+            background-color: var(--herotitle);   
+        }
+    .join-list__icon {
+            fill:  var(--text-color);
+            padding: 0;
+        
+            transition-property: fill;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 250ms;
+        }
+    .join-list__icon:hover, .join-list__icon:focus {
+            fill: var(--accent-bc);   
+        }
+    
+    .footer-blog {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            border-bottom: 3px solid #000000;          
+            padding-bottom: 15px;
+        }
+    .footer-blog__list {
+            display: inline-flex;
+         
+        }
+    .footer-blog__item {
+            text-decoration: none;
+            color: var(--herotitle);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.71;
+            text-align: left;    
+        }
+    .about {
+        margin-left: 250px;
+        margin-right: 30px;      
+    }
+    .contact {
+        margin-left: 50px;
+    }
+       
+
+    /*user*/
+    .user {   
+        width: 1400px;    
+        text-align: center;
+    }
+    .user-container {
+       text-align: center;  
+       display: flex;
+       flex-wrap: nowrap;  
+
+       width: 100%;
+       height: 316px;
+       padding-top: 39x;
+       padding-bottom: 17px;
+    }
+    .user__title {
+        display: none;
+    }
+    .ranks {
+        align-items: center;
+
+        width: 298px;
+        height: 260px;
+        margin-left: 0;
+        margin-right: 18px;
+        box-shadow: 0px 6px 6px 0px #0f2e9e40;
+
+    }
+    .ranks__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .ranks__title,
+    .ball__title,
+    .olx__title,
+    .user-title,
+    .judges-title {
+        color: var(--accent-text);
+        margin-bottom: 24px;
+    }
+    .ranks__item {
+       width: 80px;
+       height: 80px;
+       margin-left: 0;
+       margin-right: 15px;
+       margin-bottom: 25px;
+    }
+    .rank__item:last-child {
+        margin-right: 0;
+    }
+    .ranks__text {
+        color: var(--text-color);
+        font-family: inherit;  
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none; 
+       
+    }
+    .info {
+        display: block;
+        align-items: center;
+
+        width: 260px;
+        height: 260px;
+        margin-right: 34px; 
+        
+        box-shadow: 0px 6px 6px 0px #0f2e9e40;
+    }
+    .info__list {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }    
+    .ball {
+        width: 100%;
+        height: 93px;
+        margin-bottom: 26px;
+
+        align-items: center;
+    }   
+    .ball__info {
+        width: 145px;
+        height: 24px;
+       text-align: center;
+        color: var(--text-color);
+        border: 2px solid var(--accent-text);        
+        border-radius: 4px;
+    }
+    .olx {
+        width: 100%;
+        height: 141px;
+        margin: 0;
+    }
+    .olx__variable {
+        width: 145px;
+        height: 24px;
+       text-align: center;
+        color: var(--text-color);
+        border: 2px solid var(--accent-text);        
+        border-radius: 4px;
+    }

@@ -1,0 +1,93 @@
+.registration {
+    position: fixed;
+  
+    top: 0;
+    right: 0;
+    width: 800px;
+    height: 1150px;
+    border-radius: 12px;
+    z-index: 2;
+    overflow: scroll;
+
+    background-color: var(--herotitle);
+    text-align: center;   
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;   
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: 1px solid var(--accent-bc);     
+        border-radius: 50%; 
+        cursor: pointer;
+    }
+    &__form {
+        padding: 40px;         
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__text {
+        color: var(--accent-bc);    
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.1;
+        text-align: center; 
+    }
+}
+.save-btn {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 34px;
+    padding-right: 34px;
+    border: transparent;
+    border-radius: 5px;
+    background-color: var(--herotitle);
+
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--accent-bc); 
+}
+.data {
+
+    display: flex;
+    margin-top: 20px;
+
+    &__name {
+       margin-right: 10px;
+    }
+    &__user {
+        width: 350px;
+        height: 45px;
+        border-color: 1px var(--accent-bc);
+        margin-right: 20px;
+    }   
+    &__foto {
+        position: relative;
+        margin-left: 10px;
+        height: 45px;
+        border-color: 1px var(--accent-bc);
+    } 
+    &__forma {
+        position: absolute;
+        top: 50%;
+        left: 12px; 
+        display: inline-block;
+        fill: currentColor;  
+    }
+}
+

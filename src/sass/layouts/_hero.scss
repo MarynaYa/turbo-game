@@ -1,0 +1,113 @@
+    
+    /*hero*/
+    .hero-section {
+        position: relative;  
+        margin-left: auto; 
+        margin-right: auto;
+        overflow: hidden;
+    
+        height: 720px;
+
+       text-align: center;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/img.png/hero11.jpg');
+    background-color: var(--bgr-color);
+      }
+     
+
+      /*@media screen and (max-width: 767px) {
+        .hero-container {
+          width: 100%;
+          height: 360px;
+          padding-top: 67px;
+          background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url('/images/img.png/hero11.jpg');
+        }
+        .hero-container__title {
+          margin-bottom: 160px;  
+        
+          font-size: 24px;    
+        }
+        .hero-container__button {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 15px;
+          padding-right: 15px;
+          margin-right: 7px;
+          font-size: 12px;
+        }
+      }
+      @media screen and (min-width: 768px ) {
+        .hero-container {
+          width: 100%;
+          height: 540px;
+          padding-top: 100px;
+          background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url('/images/img.png/hero1@2x.jpg');
+        }
+        .hero-container__title {
+          margin-bottom: 240px;
+         
+          font-size: 36px;
+      }
+      .hero-container__button {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          padding-left: 33px;
+          padding-right: 33px;
+          margin-right: 12px;
+          font-size: 15px;
+      }
+      }
+      @media screen and (min-width: 1400px) {*/
+        .hero-container {      
+          padding-top: 135px;                 
+      } 
+      .hero-container__title {
+        margin-bottom: 320px;
+          
+        font-size: 44px;
+      }
+      .hero-conainer__button {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 34px;
+        padding-right: 34px;       
+        border-radius: 5px;
+        background-color: var(--accent-bc);
+    
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: center;
+        color: var(--herotitle);    
+      }           
+      .hero-container { 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+      }
+    .hero-container__title {
+          margin-bottom: 320px;
+          margin-top: 0px;
+          margin-left: auto;
+          margin-right: auto;
+      
+          color: var(--herotitle);
+          font-weight: 900;    
+          line-height: 1.36;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          text-align: center;
+        }      
+        .hero-container__button {
+          border: transparent;
+          border-radius: 5px;
+          background-color: var(--accent-bc);
+        
+          font-weight: 500;
+          line-height: 1.5;
+          text-align: center;
+          color: var(--herotitle);  
+        }
