@@ -1,0 +1,15 @@
+//Цвета____________________________
+:root {
+    --primary-text-color: #212121;
+    --text-color: #757575;
+    --accent-text: #0F2E9E;
+    --herotitle: #FFFFFF;
+    --second-color: #ffffff;
+    --bgr-color: #010320;
+    --accent-bc: #0F2E9E;
+    --second-bc: #000000;
+}
+
+// Переходы______________________________________________________________
+$animationTimingFunction: cubic-bezier(0.4, 0, 0.2, 1);
+//transition: color 250ms $animationTimingFunction;

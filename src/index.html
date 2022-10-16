@@ -4,11 +4,613 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+  <body class="page">
+    <!--Cap-->
+    <header class="page-header">
+        <div class="container main-div">
+            <div class="box-logo">
+                <a href="" class="header-logo">
+                    <img src="./images/img.png/logo.png" class="header-logo__icon" alt="Логотип" width="40" height="40">
+                </a>
+            </div>
+      
+             <div class="header-button">
+                <!--form log-->
+                <button class="header-button__log" data-log-open>Log in</button>
+                    <div class="log is-hidden" data-log>
+                        <form action="" class="log_form" autocomplete="off">
+                            <strong class="log__text">Для входа в игру введите свой логин и пароль</strong>
+                                <div class="field">
+                                    <label for="pasv" class="field__nama">
+                                        <span class="style-name">Логин</span>
+                                    </label>
+                                    <input class="field__user" type="text" id="name" name="name">
+                                </div>
+                               <div class="field">
+                                    <label for="name" class="field__nama">
+                                        <span class="style-name">Пароль</span>
+                                    </label>
+                                    <input class="field__user" type="text" id="password" name="password">
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                    <a href="./traineeturbo.html" class="site-nav__link">Войти</a></li>                
+                                </button>       
+                         </form>
+                        <buttom class="log__btn" type="button" data-log-close>
+                            <svg class="log__icon" width="18" height="18">
+                                <use href="./images/img.svg/sprite.svg#icon-close-black-18dp-2-1-1"></use>
+                            </svg>
+                        </buttom>
+                        </div>
+                        <!--form regis-->
+                        <button class="header-button__register" data-register-open>Register</button>
+                        <div class="registration is-hidden" data-register>
+                            <form class="registration__form" autocomplete="off">                        
+                                <strong class="registration__text">Оставьте свои данные, мы ваc зарегистрируем</strong>
+                                <div class="data">
+                                    <label class="data__name" for="name">
+                                        <span class="stile-name">ФИО</span>
+                                    </label>                               
+                                    <input class="data__user" type="text" name="name" id="name">   
+                                    <label class="field__name" for="name">
+                                        <span class="stile-name">ФОТО</span>
+                                    </label>                               
+                                    <input class="data__foto" type="text" name="name" id="name">                                                         
+                                </div>
+                                <div class="field">
+                                    <label class="field__name" for="pasv">
+                                        <span class="stile-name">Дата рождения</span>
+                                    </label>
+                                    <input class="field__user" type="text" name="name" id="name">                                                                        
+                                </div>
+                                <div class="field">
+                                    <label class="field__name" for="pasv">
+                                        <span class="stile-name">Контактный номер</span>
+                                    </label>
+                                    <input class="field__user" type="text" name="name" id="name">                                                                        
+                                </div>
+                                <div class="field">
+                                    <label class="field__name" for="pasv">
+                                        <span class="stile-name">Электронный адрес</span>
+                                    </label>
+                                    <input class="field__user" type="text" name="name" id="name">                                                                        
+                                </div>
+                                <div class="field">
+                                    <label class="field__name" for="pasv">
+                                        <span class="stile-name">Адрес проживания</span>
+                                    </label>
+                                    <input class="field__user" type="text" name="name" id="name">                                                                        
+                                </div>
+                                <div class="field">
+                                    <label class="field__name" for="pasv">
+                                        <span class="stile-name">Должность</span>
+                                    </label>
+                                    <input class="field__user" type="text" name="name" id="name">                                                                        
+                                </div>
+                                <div class="field">
+                                    <label class="field__name" for="pasv">
+                                        <span class="stile-name">Cемейное положение</span>
+                                    </label>
+                                    <input class="field__user" type="text" name="name" id="name">                                                                        
+                                </div>
+                                <div class="field">
+                                    <label class="field__name" for="pasv">
+                                        <span class="stile-name">Паспортные данные</span>
+                                    </label>
+                                    <input class="field__user" type="text" name="name" id="name">                                                                        
+                                </div>
+                                <div class="field">
+                                    <label class="field__name" for="pasv">
+                                        <span class="stile-name">Данные ИНН</span>
+                                    </label>
+                                    <input class="field__user" type="text" name="name" id="name">                                                                        
+                                </div>
+                                <div class="field">
+                                    <label class="field__name" for="pasv">
+                                        <span class="stile-name">Специальность по образовании</span>
+                                    </label>
+                                    <input class="field__user" type="text" name="name" id="name">                                                                        
+                                </div>
+                                <div class="field">
+                                    <label class="field__name" for="pasv">
+                                        <span class="stile-name">Предыдущие опыт работы</span>
+                                    </label>
+                                    <input class="field__user" type="text" name="name" id="name">                                                                        
+                                </div>
+        
+                                <button type="submit" class="save-btn">Сохранить</button>  
+                                <button type="submit" class="submit-btn">Войти</button>  
+                            </form>
+                            <buttom class="log__btn" type="button" data-register-close>
+                                <svg class="log__icon" width="18" height="18">
+                                    <use href="./images/img.svg/sprite.svg#icon-close-black-18dp-2-1-1"></use>
+                                </svg>
+                            </buttom>     
+                          </div>  
+                          <!--Menu btn-->     
+                          <button class="header-menu__btn" data-menu-button
+                          type="button" 
+                          aria-expanded="true" 
+                          aria-controls="menu-conteiner" 
+                          >       <svg class="header-menu__icon" width="24" height="24" aria-label="переключатель мобильного меню">
+                                  <use class="header-menu__icon-cross" href="./images/img.svg/sprite.svg#icon-close-black-18dp-2-1-1"></use>
+                                  <use class="header-menu__icon-menu" href="./images/img.svg/sprite.svg#icon-menu_24px"></use>
+                              </svg>
+                          </button>  
+                          <div class="header-navigation">
+                            <ul class="site-nav list">
+                                <li class="site-nav__item">
+                                    <a href="" class="site-nav__link">Тео-стажер</a></li>
+                                <li class="site-nav__item">
+                                    <a href="" class="site-nav__link">Тео-спец</a></li>
+                                <li class="site-nav__item">
+                                    <a href="" class="site-nav__link">Тео-профи</a></li>
+                                <li class="site-nav__item">
+                                    <a href="" class="site-nav__link">Турбо</a></li>
+                            </ul>
+                        </div>  
+
+                 </div>
+            </div>
+</header>
+  <!--Main-->
+  <main>
+    <!--Hero-->
+    <section class="hero-section section">
+        <dib class="hero-container container">
+            <h1 class="hero-container__title">Твоя мечта в твоих руках!</h1>
+                <button class="hero-conainer__button" type="button" data-modal-open>Правила игры</button>
+            <!--Rules-->
+                <div class="baсkdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <div class="modal__text">
+                            <div class="rules">
+                                <h2 class="rules__title">Правила Игры «Турбо»</h2>  
+                            </div>
+                                                       
+                            <ul class="rules-list list">
+                                <li class="rules-list__item">
+                                    <h3 class="rules-list__title">Краткие правила</h3>
+
+                                    
+                                    <div class="rules-list__box">
+                                    <picture class="rules-list__picture">                                      
+                                        <img src="./images/img.png/teo.jpg" width="180" height="120" alt="Theo">
+                                    </picture>
+                                    <div class="rules-list__paragraph">
+                                    <p class="rules-list__text text">
+                                        Вы находитесь в игре «Турбо», где сотрудники компании весело выполняют свой функционал, управляя своей карьерой и исполняя свою мечту! Игроки могут играть каждый сам за себя, помогать команде, накапливая баллы ради своей мечты, двигаясь по карьерной лестнице и увеличивая свой оклад.
+«Турбо» — это и пошаговая инструкция для достижения своей цели, и поле для развития, и площадка с приятными бонусами.
+После регистрации Лицензиат получает доступ к площадке первого уровня «Тео-стажер» и возможность получить первых 50 баллов. Выполняя задания, Лицензиат улучшает свой рейтинг, зарабатывает баллы, новые звания и внутрикорпоративные ценности. При накоплении от 50 баллов Лицензиат может купить себе место в основную игру, где уже будет идти борьба за свою Мечту. 
+Для покупки своей Мечты Лицензиат должен пройти 2 уровня игры (помимо уровня «Тео-стажер»), «Тео-спец» и «Тео-профи», накопить до 350 баллов и купить на них свою Мечту. Мечту можно купить, только перейдя на уровень «Турбо».
+                                    </p>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li class="rules-list__item">
+                                    <h3 class="rules-list__title">Участники игры</h3>
+                                   <div class="rules-list__box">                                  
+                                    <div class="rules-list__paragraph">
+                                    <p class="rules-list__text">Администратор игры – это человек, который следит за актуальностью игры, за корректность хода игры, за регистрацию новых участников, за сбои в игре, за эффективность хода игры;
+                                        Игроки – это все, кто зарегистрировался на игру и были допущены на игру Администратором.
+                                        </p>
+                                        <h4 class="rules-list__text"> Категория игрока определяется:</h4>
+                                        <ul class="infa-list list">
+                                            <li class="infa-list__item">Ходом игры: начиная с категории «Тео-стажер» до «Турбо»;</li>
+                                            <li class="infa-list__item">Оценки Администратора, т.е. Администратор может по своему усмотрению пропустить категорию «Тео-стажер» и присвоить новому Лицензиату категорию «Тео-спец».</li>
+                                        </ul>
+                                    </div>
+                                    <picture class="rules-list__picture">                                      
+                                        <img src="./images/img.png/teo.jpg" width="180" height="120" alt="Theo">
+                                    </picture>
+                                   </div>
+                                </li>
+                                <li class="rules-list__item">
+                                    <h3 class="rules-list__title">Цель игры</h3>
+                                   <div class="rules-list__box">
+                                    <picture class="rules-list__picture">                                      
+                                        <img src="./images/img.png/teo.jpg" width="180" height="120" alt="Theo">
+                                    </picture>
+                                    <div class="rules-list__paragraph">
+                                    <p class="rules-list__text">Основная цель игры, это пройти все стадии игры, получить новые навыки, знания, победы необходимые для накопления баллов для покупки своей Мечты.
+                                    </p>
+                                        <h4 class="rules-list__infa"> Прохождения каждого уровня игры приносит Участнику определённую выгоду:</h4>
+                                        <ul class="infa-list list">
+                                            <li class="infa-list__item">Тео-стажер: переходит в основной штат;</li>
+                                            <li class="infa-list__item">Тео-спец: переходит в кадровый резерв;</li>
+                                            <li class="infa-list__item">Тео-профи: переходит на высший уровень, который позволяет купить Мечту.</li>
+                                        </ul>
+                                    </div>
+                                   </div>
+                                </li>
+                                <li class="rules-list__item">
+                                    <h3 class="rules-list__title">Мечта</h3>
+                                   <div class="rules-list__box">                                    
+                                    <div class="rules-list__paragraph">
+                                    <p class="rules-list__text">Это выбранная из предоставленного списка Мечта, исполнение, которой сделает Участника счастливым и удовлетворит его амбиции.
+                                        Мечта – это мероприятие, стоимостью от 2000 $ до 5000 $.</p>
+                                        <h4 class="rules-list__infa">Пожалуйста, выберите Мечту, за которую Вы будете бороться в данной игре:</h4>
+                                        <select>
+                                            <option value="">Поездка на Бали с семьей</option>
+                                            <option value="">Курс обучения в kmbs</option>
+                                            <option value="">Первоначальный взнос на недвижимость</option>
+                                            <option value="">Аренда авто класса Lux на неделю/месяц</option>
+                                            <option value="">Обучение управление яхтой</option>
+                                            <option value="">Оплата обучения детей</option>
+                                            <option value="">Буковель на Новый Год с семьей</option>
+                                            <option value="">Набор Apple</option>
+                                            <option value="">Disneyland с семьей</option>
+                                            <option value="">Абонемент в спорт-комплекс класса Lux на 3 года</option>
+                                            <option value="">Абонемент в конный клуб</option>
+                                            <option value="">Винный тур по Европе</option>
+                                            <option value="">Абонемент в тенисный клуб</option>
+                                            <option value="">Поездка в Америку на 2-их</option>
+                                            <option value="">Мастер-клас со звездой</option>
+                                            <option value="">Ехстримальный тур по ЮАР</option>
+                                        </select>                                           
+                                    </div>
+                                    <picture class="rules-list__picture">                                      
+                                        <img src="./images/img.png/teo.jpg" width="180" height="120" alt="Theo">
+                                    </picture>
+                                   </div>
+                                </li>
+                                <li class="rules-list__item">
+                                    <h3 class="rules-list__title">Как играть</h3>
+                                    <div class="rules-list__box">
+                                    <picture class="rules-list__picture">                                      
+                                        <img src="./images/img.png/teo.jpg" width="180" height="120" alt="Theo">
+                                    </picture>
+                                    <div class="rules-list__paragraph">
+                                    <p class="rules-list__text">Еженедельно выполнять присвоенные Задания*, правильное выполнение которых приносит Участнику – от 2 до 5 баллов;</p>
+                                    <p class="rules-list__text">Ежемесячно вносить показатели Рейтинга/ плана *. </p>
+                                    <ul class="infa-list list">
+                                        <li class="infa-list__item">Место № 1 в рейтинге приносит Участнику – 12 баллов; </li>
+                                        <li class="infa-list__item">Место № 2 в рейтинге приносит Участнику – 10 баллов; </li>
+                                        <li class="infa-list__item">Место № 3 в рейтинге приносит Участнику – 8 баллов</li>
+                                        <li class="infa-list__item">Место № 4 в рейтинге приносит Участнику – 6 баллов; </li>
+                                        <li class="infa-list__item">Место № 5 в рейтинге приносит Участнику – 5 баллов;</li>
+                                        <li class="infa-list__item">Место № последнее в рейтинге приносит Участнику – - 5 баллов;</li>
+                                        <li class="infa-list__item">Место № предпоследнее в рейтинге приносит Участнику – -3 баллов; </li>
+                                    </ul>
+                                    <p class="rules-list__text">Ежемесячно Участник проходит оценку другими участниками. На основание оценки присваивается Звание*. Выбор оценивающих определяется рандомно.</p>
+                                    <p>jjjjjjjjjjjjjjj</p>
+                                    </div>
+                                    </div>
+                                </li>                            
+                            </ul>                     
+                        </div>                    
+                    <button class="modal__btn" type="button" data-modal-close>
+                        <svg class="modal__icon" width="18" height="18">
+                            <use href="./images/img.svg/sprite.svg#icon-close-black-18dp-2-1-1"></use>
+                        </svg>
+                    </button>
+                    </div>
+                    </div>
+            </dib>
+    </section>
+    <!--Trailer-->
+    <section class="trailer section">
+        <div class="trailer-container container">
+            <p class="trailer-text">____*** перед началом игры рекомендуем ознакомиться с мультифильмом Турбо :</p>
+                 <div class="trailer-conttainer__video">
+                    <video class="video" width="655" height="430" controls>
+                        <source src="./movie.mp4/XRecorder_turbo.mp4" type="video/mp4">
+                    </video>
+                </div>           
+        </div>
+    </section>
+    <!--Prize-->
+    <section class="gallery section">
+        <div class="gallery-container container">
+            <h1 class="gallery-container__title">Это может быть твоя мечта!</h1>
+                <ul class="gallery__list list">
+                    <li class="gallery__item">
+                        <img src="./images/gallery.img/p11.jpg" width="150" height="120" alt="Disneyland" class="gallery__img" loading="lazy" />                    
+                       
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__img"                                             
+                        src="./images/gallery.img/p21.jpg" width="150" height="100" alt="relax" loading="lazy" />
+
+                        <img class="gallery__img"                                               
+                        src="./images/gallery.img/p22.jpg" width="150" height="100" alt="yaxta" loading="lazy" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__img"                                              
+                        src="./images/gallery.img/p31.jpg" width="160" height="130" alt="Ferrari" loading="lazy"/>
+
+                       <img class="gallery__img"                                                
+                        src="./images/gallery.img/p32.jpg" width="220" height="160" alt="bukovele" loading="lazy" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__img"                                                 
+                        src="./images/gallery.img/p41.jpg" width="150" height="100" alt="childereduc" loading="lazy" />
+                        <img class="gallery__img"                                                
+                        src="./images/gallery.img/p42.jpg" width="150" height="100" alt="apple" loading="lazy" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__img"                                                
+                        src="./images/gallery.img/p51.jpg" width="150" height="130" alt="educ" loading="lazy" />
+                       
+                        <img class="gallery__img"                                                
+                        src="./images/gallery.img/p52.jpg" width="150"  height="100" alt="HorsebackRiding" loading="lazy" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__img"                                                
+                        src="./images/gallery.img/p6.jpg" width="150" height="100" alt="houses" loading="lazy" />
+       
+                        <img class="gallery__img"                                                
+                        src="./images/gallery.img/bukovel2.jpg" width="150" height="100"alt="bukovel" loading="lazy" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__img"                                               
+                        src="./images/gallery.img/p61.jpg" width="150" height="120" alt="gym" loading="lazy" />
+                    </li>
+                </ul>            
+        </div>
+    </section>
+    <!--Category-->
+    <section class="category section">
+        <div class="category-container container">
+            <h1 class="category-container__title">Категории в игре</h1>
+            <ul class="category-container__list list">
+                <li class="category-container__item">
+                    <ul class="intern list">
+                        <li class="present">
+                            <picture class="present__picture">
+                                <img src="./images/img.png/teo.jpg" width="190" alt="Teo">
+                            </picture>
+                            <div class="present__name">
+                                <h2 class="present__title">Тео-стажер</h2>
+                                    <div class="present__star">
+                                        <svg class="present__icon" width="16" height="16">
+                                            <use href="./images/img.svg/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                    </div>                                
+                            </div>                            
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Стаж</h3>
+                                <p class="box-category__text">от 1 месяца до 3 месяцев</p>                           
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Мотивация</h3>
+                                <p class="box-category__text">-20% от оклада</p>                          
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Ответственность</h3>
+                                <p class="box-category__text">под руководством назначенного наставника</p>                           
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Социальные блага</h3>
+                                <p class="box-category__text">в установленных компанией лимитов</p>                         
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">min баллов</h3>
+                                <p class="box-category__text">50 баллов</p>                            
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Приз</h3>
+                                <p class="box-category__text">переход в основной штат</p>                            
+                        </li>
+                    </ul>
+                </li>
+                <li class="category-container__item">
+                    <ul class="intern list">
+                        <li class="present">
+                            <picture class="present__picture">
+                                <img src="./images/img.png/teo.jpg" width="190" alt="Teo">
+                            </picture>
+                            <div class="present__name">
+                                <h2 class="present__title">Тео-спец</h2>
+                                    <div class="present__star">
+                                        <svg class="present__icon" width="16" height="16">
+                                            <use href="./images/img.svg/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                        <svg class="present__icon" width="16" height="16">
+                                            <use href="./images/img.svg/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                    </div>                                
+                            </div>                            
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Стаж</h3>
+                                <p class="box-category__text">от 3 месяцев до 9 месяцев</p>                           
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Мотивация</h3>
+                                <p class="box-category__text">оклад должности</p>                          
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Ответственность</h3>
+                                <p class="box-category__text">под руководство своего руководителя</p>                           
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Социальные блага</h3>
+                                <p class="box-category__text">в установленных компанией лимитов</p>                         
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">min баллов</h3>
+                                <p class="box-category__text">100 баллов</p>                            
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Приз</h3>
+                                <p class="box-category__text">переход в кадровый резерв</p>                            
+                        </li>
+                    </ul>
+                </li>
+                <li class="category-container__item">
+                    <ul class="intern list">
+                        <li class="present">
+                            <picture class="present__picture">
+                                <img src="./images/img.png/teo.jpg" width="190" alt="Teo">
+                            </picture>
+                            <div class="present__name">
+                                <h2 class="present__title">Тео-профи</h2>
+                                    <div class="present__star">
+                                        <svg class="present__icon" width="16" height="16">
+                                            <use href="./images/img.svg/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                        <svg class="present__icon" width="16" height="16">
+                                            <use href="./images/img.svg/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                        <svg class="present__icon" width="16" height="16">
+                                            <use href="./images/img.svg/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                    </div>                                
+                            </div>                            
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Стаж</h3>
+                                <p class="box-category__text">от 9 месяцев до 15 месяцев</p>                           
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Мотивация</h3>
+                                <p class="box-category__text">+20% от оклада</p>                          
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Ответственность</h3>
+                                <p class="box-category__text">самостоятельность в рамках принятого функционала</p>                           
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Социальные блага</h3>
+                                <p class="box-category__text">к отпуску: + 2 дня</p>   
+                                <p class="box-category__text">обучение: 50%</p>
+                                <p class="box-category__text">суточных: 150грн</p>                  
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">min баллов</h3>
+                                <p class="box-category__text">300 баллов</p>                            
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Приз</h3>
+                                <p class="box-category__text">переход в категорию Турбо</p>                            
+                        </li>
+                    </ul>
+                </li>
+                <li class="category-container__item">
+                    <ul class="intern list">
+                        <li class="present">
+                            <picture class="present__picture">
+                                <img src="./images/img.png/teo.jpg" width="190" alt="Teo">
+                            </picture>
+                            <div class="present__name">
+                                <h2 class="present__title">Турбо</h2>
+                                    <div class="present__star">
+                                        <svg class="present__icon" width="16" height="16">
+                                            <use href="./images/img.svg/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                        <svg class="present__icon" width="16" height="16">
+                                            <use href="./images/img.svg/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                        <svg class="present__icon" width="16" height="16">
+                                            <use href="./images/img.svg/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                        <svg class="present__icon" width="16" height="16">
+                                            <use href="./images/img.svg/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                    </div>                                
+                            </div>                            
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Стаж</h3>
+                                <p class="box-category__text">от 15 месяцев до 24 месяцев</p>                           
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Мотивация</h3>
+                                <p class="box-category__text">+30% от оклада</p>                          
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Ответственность</h3>
+                                <p class="box-category__text">возможноть самостоятельно курировать проекты</p>                           
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Социальные блага</h3>
+                                <p class="box-category__text">к отпуску: + 5 дней</p>  
+                                <p class="box-category__text">обучение: 100%</p>
+                                <p class="box-category__text">суточных: 300грн</p>
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">min баллов</h3>
+                                <p class="box-category__text">350 баллов</p>                            
+                        </li>
+                        <li class="box-category">
+                            <h3 class="box-category__title">Приз</h3>
+                                <p class="box-category__text">МЕЧТА</p>                            
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+  </main>
+  <!--Attic-->
+  <footer class="footer section">
+    <div class="footer-container container">
+        <div class="footer-blog">
+            <div class="about">
+                <ul class="about__list list">
+                    <li class="about__item">О нас</li>
+                    <li class="about__item">Отзывы</li>
+                    <li class="about__item">Вакансии</li>
+                </ul>
+            </div>
+            <div class="box-logo">
+                <a href="" class="header-logo">
+                    <img src="./images/img.png/logo.png" class="header-logo__icon" alt="Логотип" width="40" height="40">
+                </a>
+            </div>
+            <div class="contact">
+                <ul class="contact__list list">
+                    <li class="contact__item">г. Одесса, ул. Грушевского, хх</li>
+                    <li class="contact__item">
+                        <a href="mailto:info@devstudio.com" class="footer-text__adress">info@devstudio.com</a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="tel:+380961111111" class="footer-text__adress">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="join">
+            <ul class="join-list list">
+                <li class="join-list__item">
+                    <a href="" class="join-list__link"href aria-label="instagram" target="_blank" >
+                        <svg class="join-list__icon" width="20" height="20">
+                            <use href="./images/img.svg/sprite-socialnetwork.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="join-list__item">
+                    <a href="" class="join-list__link" aria-label="facebook" target="_blank">
+                        <svg class="join-list__icon" width="20" height="20">
+                            <use href="./images/img.svg/sprite-socialnetwork.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="join-list__item">
+                    <a href="" class="join-list__link" aria-label="link" target="_blank">
+                        <svg class="join-list__icon" width="20" height="20">
+                            <use href="./images/img.svg/sprite-socialnetwork.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </footer>
+
+  <script src="./js/log.js" type="module"></script>
+  <script src="./js/register.js" type="module"></script>
+  <script src="./js/rules.js" type="module"></script>
+</body>
 </html>
