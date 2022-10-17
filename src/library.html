@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player title</title>
+    <link
+    rel="shortcut icon"
+    type="img/png"
+    href="./images/img.png/teo2.jpg"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    n
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body class="page">
+    <!--Cap-->
+ <header class="header">
+    <div class="container main-div">
+        <div class="box-logo">
+            <a href="" class="header-logo">
+                <img src="./images/img.png/logo.png" class="header-logo__icon" alt="Логотип" width="40" height="40">
+            </a>
+        </div>
+  <!--Menu btn-->     
+  <button class="header-menu__btn" data-menu-button
+  type="button" 
+  aria-expanded="true" 
+  aria-controls="menu-conteiner" 
+  >       <svg class="header-menu__icon" width="24" height="24" aria-label="переключатель мобильного меню">
+          <use class="header-menu__icon-cross" href="./images/img.svg/sprite.svg#icon-close-black-18dp-2-1-1"></use>
+          <use class="header-menu__icon-menu" href="./images/img.svg/sprite.svg#icon-menu_24px"></use>
+      </svg>
+  </button>  
+  <div class="header-box">
+    <ul class="header-nav list">
+        <li class="header-nav__item">
+            <a href="./index.html" class="header-nav__link">Правила</a></li>
+        <li class="header-nav__item">
+            <a href="./trainee.html" class="header-nav__link">Тео-стажер</a></li>
+        <li class="header-nav__item">
+                <a href="" class="header-nav__link">Тео-спец</a></li>
+        <li class="header-nav__item">
+            <a href="./library.html" class="header-nav__link current">Библиотека</a></li>           
+    </ul>
+</div> 
+    </div>
+</header>
+<main>
+    <!--filter-->
+    <section class="section main">
+        <h1 hidden>Content</h1>
+        <!--Search-->
+        <div class="search">
+          <form class="search__form">
+            <input
+              class="search__input"
+              type="text"
+              name="filmName"
+              minlength="3"
+              maxlength="20"
+              placeholder="Search..."
+              required
+            />        
+            <button class="search__btn" type="submit">
+              <svg class="search__img" width="18" height="18">
+                <use href="./images/img.svg/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+         <!--Filter-->
+         <div class="conteiner filter">
+            <h2 class="filter-titl" hidden>Filter</h2>
+            <ul class="filter-list list">
+                <li class="filter-list__item"><button type="button" class="filter-list__btn">Все</button></li>
+                <li class="filter-list__item"><button type="button" class="filter-list__btn">О компании</button></li>
+                <li class="filter-list__item"><button type="button" class="filter-list__btn">О продукте</button></li>
+                <li class="filter-list__item"><button type="button" class="filter-list__btn">О продажах</button></li>
+                <li class="filter-list__item"><button type="button" class="filter-list__btn">О менеджменте</button></li>
+                <li class="filter-list__item"><button type="button" class="filter-list__btn">О планировании</button></li>
+                <li class="filter-list__item"><button type="button" class="filter-list__btn">О переговарах</button></li>
+                <li class="filter-list__item"><button type="button" class="filter-list__btn">О финансах</button></li>
+                <li class="filter-list__item"><button type="button" class="filter-list__btn">Автоматизация</button></li>
+            </ul>
+          </div>  
+          
+      <!--Project-->
+      <div class="container content">
+        <h2 class="content-titl" hidden>Библиотека</h2>
+        <ul class="content-list list">
+            <li class="content-list_item">
+                <div class="action">
+
+                    <img class="action__img" 
+                    srcset="./images/library/company11.jpg 450w,                           
+                            ./images/library/company12.jpg 900w"
+                    src="./images/library/company11.jpg" 
+                    sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                    width="450"
+                    height="244"
+                    loading="lazy"
+                    alt="heart">
+    
+                      <a href="" class="poster-text-hover">Ресурс предлагает комплексные предложения</a>
+                </div>
+                <div class="bloc">  
+                    <h3 class="bloc__title">История</h3>
+                    <p class="bloc__text">О компании</p>
+                </div>
+            </li>
+            <li class="content-list_item">                    
+                <div class="action">
+                    <img class="action__img" 
+                    srcset="./images/library/product11.jpg 450w,                           
+                            ./images/library/product12.jpg 900w"
+                    src="./images/library/product11.jpg" 
+                    sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                    width="450"
+                    height="244"
+                    loading="lazy"
+                    alt="heart">
+                      <a href="" class="poster-text-hover">Ресурс предлагает комплексные предложения</a>                            
+                </div>
+                <div class="bloc">
+                <h3 class="bloc__title">Производство</h3>
+                <p class="bloc__text">О продукте</p>
+                </div>                   
+            </li>
+            <li class="content-list_item">                    
+                <div class="action">
+                    <img class="action__img" 
+                    srcset="./images/library/sale11.jpg 450w,                           
+                            ./images/library/sale12.jpg 900w"
+                    src="./images/library/sale11.jpg" 
+                    sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                    width="450"
+                    height="244"
+                    loading="lazy"
+                    alt="heart">
+                      <a href="" class="poster-text-hover">Ресурс предлагает комплексные предложения</a>
+                </div>
+                <div class="bloc">
+                    <h3 class="bloc__title">Дистрибуция как она есть</h3>
+                    <p class="bloc__text">О продажах</p>
+                </div>                  
+            </li>
+            <li class="content-list_item">
+                <div class="action">
+                    <img class="action__img" 
+                    srcset="./images/library/negatiation11.jpg 450w,                           
+                            ./images/library/negatiation12.jpg 900w"
+                    src="./images/library/negatiation11.jpg" 
+                    sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                    width="450"
+                    height="244"
+                    loading="lazy"
+                    alt="heart">
+
+                      <a href="" class="poster-text-hover">Ресурс предлагает комплексные предложения</a>
+                </div>                     
+                <div class="bloc">
+                    <h3 class="bloc__title">Жесткие переговоры</h3>
+                    <p class="bloc__text">О переговорах</p>
+                </div>                   
+            </li>
+            <li class="content-list_item">
+                <div class="action">
+                    <img class="action__img" 
+                    srcset="./images/library/plan11.jpg 450w,                           
+                            ./images/library/plan12.jpg 900w"
+                    src="./images/library/plan11.jpg" 
+                    sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                    width="450"
+                    height="244"
+                    loading="lazy"
+                    alt="heart">
+                  
+                      <a href="" class="poster-text-hover">Ресурс предлагает комплексные предложения</a>
+                </div>                   
+                <div class="bloc">  
+                    <h3 class="bloc__title">Тайм-менеджемент</h3>
+                    <p class="bloc__text">О планировании</p>
+                </div>                   
+            </li>
+            <li class="content-list_item">
+                <div class="action">
+                    <img class="action__img" 
+                    srcset="./images/library/auto11.jpg 450w,                           
+                            ./images/library/auto12.jpg 900w"
+                    src="./images/library/auto11.jpg" 
+                    sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                    width="450"
+                    height="244"
+                    loading="lazy"
+                    alt="heart">
+                      <a href="" class="poster-text-hover">Ресурс предлагает комплексные предложения</a>
+                </div>                      
+                <div class="bloc">
+                    <h3 class="bloc__title">Инструкция работы с ERP</h3>
+                    <p class="bloc__text">Автоматизация</p>
+                </div>                  
+            </li>
+            <li class="content-list_item">
+                <div class="action">
+                    <img class="action__img" 
+                    srcset="./images/library/finance11.jpg 450w,                           
+                            ./images/library/finance12.jpg 900w"
+                    src="./images/library/finance11.jpg" 
+                    sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                    width="450"
+                    height="244"
+                    loading="lazy"
+                    alt="heart">                   
+                    <a href="" class="poster-text-hover">Ресурс предлагает комплексные предложения</a>
+                </div>                      
+                <div class="bloc">
+                    <h3 class="bloc__title">Финансы для нефинансиста</h3>
+                    <p class="bloc__text">О финансах</p>
+                </div>                   
+            </li>
+            <li class="content-list_item">
+                <div class="action">
+                    <img class="product__img" 
+            srcset="./images/library/manager11.jpg 450w,                           
+                    ./images/library/manager12.jpg 900w"
+            src="./images/library/manager11.jpg" 
+            sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+            width="450"
+            height="244"
+            loading="lazy"
+            alt="heart">                   
+                    
+                      <a href="" class="poster-text-hover">Ресурс предлагает комплексные предложения</a>
+                </div>                     
+                <div class="bloc">
+                    <h3 class="bloc__title">Стили управления</h3>
+                    <p class="bloc__text">О менеджменте</p>
+                </div>                    
+            </li>
+            <li class="content-list_item">
+              <div class="action">
+                <img class="product__img" 
+                srcset="./images/library/product21.jpg 450w,                           
+                        ./images/library/product22.jpg 900w"
+                src="./images/library/product21.jpg" 
+                sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                width="450"
+                height="244"
+                loading="lazy"
+                alt="heart">              
+                    <a href="" class="poster-text-hover">Ресурс предлагает комплексные предложения</a>
+                 
+              </div>                     
+              <div class="bloc">
+                  <h3 class="bloc__title">Каталог</h3>
+                  <p class="bloc__text">О продукте</p>
+              </div>                    
+          </li>
+          <li class="content-list_item">
+            <div class="action">
+                <img class="product__img" 
+                srcset="./images/library/company21.jpg 450w,                           
+                        ./images/library/company22.jpg 900w"
+                src="./images/library/company21.jpg" 
+                sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                width="450"
+                height="244"
+                loading="lazy"
+                alt="heart">                      
+                
+                  <a href="" class="poster-text-hover">Ресурс предлагает комплексные предложения</a>
+            </div>                     
+            <div class="bloc">
+                <h3 class="bloc__title">Внутрение правила компании</h3>
+                <p class="bloc__text">О компании</p>
+            </div>                    
+        </li>
+        <li class="content-list_item">
+          <div class="action">
+            <img class="product__img" 
+            srcset="./images/library/plan21.jpg 450w,                           
+                    ./images/library/plan22.jpg 900w"
+            src="./images/library/plan21.jpg" 
+            sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+            width="450"
+            height="244"
+            loading="lazy"
+            alt="heart">
+                <a href="" class="poster-text-hover">Ресурс предлагает комплексные предложения</a>
+          </div>                     
+          <div class="bloc">
+              <h3 class="bloc__title">Планирование</h3>
+              <p class="bloc__text">О планировании</p>
+          </div>                    
+      </li>
+     
+        </ul>
+    </div>
+    
+</section>
+
+</main>
+ <!--Attic-->
+  <footer class="footer section">
+    <div class="footer-container container">
+        <div class="footer-blog">
+            <div class="about">
+                <ul class="about__list list">
+                    <li class="about__item">О нас</li>
+                    <li class="about__item">Отзывы</li>
+                    <li class="about__item">Вакансии</li>
+                </ul>
+            </div>
+            <div class="box-logo">
+                <a href="" class="header-logo">
+                    <img src="./images/img.png/logo.png" class="header-logo__icon" alt="Логотип" width="40" height="40">
+                </a>
+            </div>
+            <div class="contact">
+                <ul class="contact__list list">
+                    <li class="contact__item">г. Одесса, ул. Грушевского, хх</li>
+                    <li class="contact__item">
+                        <a href="mailto:info@devstudio.com" class="footer-text__adress">info@devstudio.com</a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="tel:+380961111111" class="footer-text__adress">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="join">
+            <ul class="join-list list">
+                <li class="join-list__item">
+                    <a href="" class="join-list__link"href aria-label="instagram" target="_blank" >
+                        <svg class="join-list__icon" width="20" height="20">
+                            <use href="./images/img.svg/sprite-socialnetwork.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="join-list__item">
+                    <a href="" class="join-list__link" aria-label="facebook" target="_blank">
+                        <svg class="join-list__icon" width="20" height="20">
+                            <use href="./images/img.svg/sprite-socialnetwork.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="join-list__item">
+                    <a href="" class="join-list__link" aria-label="link" target="_blank">
+                        <svg class="join-list__icon" width="20" height="20">
+                            <use href="./images/img.svg/sprite-socialnetwork.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </footer>
+
+  </body>

@@ -7,7 +7,7 @@
     height: 1150px;
     border-radius: 12px;
     z-index: 2;
-    overflow: scroll;
+    overflow-y: scroll;
 
     background-color: var(--herotitle);
     text-align: center;   
@@ -35,7 +35,7 @@
         cursor: pointer;
     }
     &__form {
-        padding: 40px;         
+        padding: 60px 40px;         
         margin-left: auto;
         margin-right: auto;
     }
@@ -52,7 +52,7 @@
     padding-bottom: 11px;
     padding-left: 34px;
     padding-right: 34px;
-    border: transparent;
+    border-color: var(--accent-bc);
     border-radius: 5px;
     background-color: var(--herotitle);
 

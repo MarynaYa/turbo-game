@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player title</title>
+    <link
+    rel="shortcut icon"
+    type="img/png"
+    href="./images/img.png/teo.jpg"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body class="page">
+ <!--Cap-->
+ <header class="header">
+    <div class="container main-div">
+        <div class="box-logo">
+            <a href="" class="header-logo">
+                <img src="./images/img.png/logo.png" class="header-logo__icon" alt="Логотип" width="40" height="40">
+            </a>
+        </div>
+  <!--Menu btn-->     
+  <button class="header-menu__btn" data-menu-button
+  type="button" 
+  aria-expanded="true" 
+  aria-controls="menu-conteiner" 
+  >       <svg class="header-menu__icon" width="24" height="24" aria-label="переключатель мобильного меню">
+          <use class="header-menu__icon-cross" href="./images/img.svg/sprite.svg#icon-close-black-18dp-2-1-1"></use>
+          <use class="header-menu__icon-menu" href="./images/img.svg/sprite.svg#icon-menu_24px"></use>
+      </svg>
+  </button>  
+  <div class="header-box">
+    <ul class="header-nav list">
+        <li class="header-nav__item">
+            <a href="./index.html" class="header-nav__link">Правила</a></li>
+        <li class="header-nav__item">
+            <a href="./trainee.html" class="header-nav__link current">Тео-стажер</a></li>
+        <li class="header-nav__item">
+                <a href="" class="header-nav__link">Тео-спец</a></li>
+        <li class="header-nav__item">
+            <a href="./library.html" class="header-nav__link">Библиотека</a></li>           
+    </ul>
+</div> 
+    </div>
+</header>
+
+ <!--Main-->
+ <main>
+ <!--USER-->
+ <section class="user section">
+    <h1 class="user__title">Исходные данные</h1>
+    <div class="user-container container">           
+        <div class="ranks">
+            <h3 class="ranks__title">Звания</h2>
+                <ul class="ranks__list list">
+                    <li class="ranks__item">
+                        <a href="" class="ranks__link"href aria-label="men" target="" >
+                            <svg class="ranks__icon" width="50" height="50">
+                                <use href="./images/img.svg/ranks.svg.svg#icon-1"></use>
+                            </svg>
+                        </a>
+                            <h3 class="ranks__text">Одиночка</h3>
+                    </li>
+                    <li class="ranks__item">   
+                        <a href="" class="ranks__link"href aria-label="men" target="" >           
+                            <svg class="ranks__icon" width="50" height="50">
+                                <use href="./images/img.svg/ranks.svg.svg#icon-2"></use>
+                            </svg>
+                        </a>
+                            <h3 class="ranks__text">Хороший чел</h3>
+                    </li>
+                    <li class="ranks__item">    
+                        <a href="" class="ranks__link"href aria-label="men" target="" >         
+                            <svg class="ranks__icon" width="50" height="50">
+                                <use href="./images/img.svg/ranks.svg.svg#icon-3"></use>
+                            </svg>
+                        </a>
+                            <h3 class="ranks__text">Теоретик</h3>
+                    </li>
+                    <li class="ranks__item">         
+                        <a href="" class="ranks__link"href aria-label="men" target="" >        
+                            <svg class="ranks__icon" width="50" height="50">
+                                <use href="./images/img.svg/ranks.svg.svg#icon-4"></use>
+                            </svg>
+                        </a>
+                            <h3 class="ranks__text">Душа компании</h3>
+                    </li>
+                    <li class="ranks__item">    
+                        <a href="" class="ranks__link"href aria-label="men" target="" >        
+                            <svg class="ranks__icon" width="50" height="50">
+                                <use href="./images/img.svg/ranks.svg.svg#icon-5"></use>
+                            </svg>
+                        </a>
+                            <h3 class="ranks__text">Энтузиаст</h3>
+                    </li>
+                    <li class="ranks__item">     
+                        <a href="" class="ranks__link"href aria-label="men" target="" >     
+                            <svg class="ranks__icon" width="50" height="50">
+                                <use href="./images/img.svg/ranks.svg.svg#icon-6"></use>
+                            </svg>
+                        </a>
+                            <h3 class="ranks__text">Мудрец</h3>
+                    </li>
+                </ul>             
+        </div>
+        <div class="info">
+            <ul class="info__list">
+                <li class="ball">
+                    <h3 class="ball__title">Баллы</h3>
+                    <label class="ball__form" for="user_ball">
+                        <input class="ball__info" type="text" name="ball" id="user_ball" placeholder="Ball"/>
+                    </label>
+                </li>
+                <li class="olx">
+                    <h3 class="olx__title">OLX</h3>
+                    <select class="olx__variable">
+                        <option value="">Задание</option>
+                        <option value="">Помощь</option>
+                        <option value="">Документы</option>
+                        <option value="">Отчет</option>
+                        <option value="">Проект</option>
+                        <option value="">Волонтерство</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="player">
+            <h3 class="user-title">ИГРОК</h2>
+            <ul class="player__list list">
+                <li class="player__item">
+                    <picture class="player__picture">
+                        <img src="./images/img.png/teo.jpg" width="145" height="90" alt="Theo">
+                                            
+                    <p class="foto-text">место для фото</p>
+                    </picture>
+                </li>
+                <li class="player__item">
+                    <form action="" class="player-form" autocomplete="off">                           
+                        <label class="form-player" for="user_name">
+                            <input class="subscriber-name" type="text" name="name" id="user_name" placeholder="name"/>
+                        </label>
+                        <label class="form-player" for="user_job">
+                            <input class="subscriber-job" type="text" name="job" id="user_job" placeholder="job"/>
+                        </label>
+                        <label class="form-player" for="user_job">
+                            <p class="player-form__text">Оклад</p>
+                            <input class="subscriber-salary" type="text" name="salary" id="user_salary" placeholder="salary"/>
+                        </label>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="judges">
+            <h3 class="judges-title">Судьи</h2>
+            <div class="judges-box">
+            <ul class="judges__list list">
+                <li class="judges__item">
+                    <picture class="player__picture">
+                        <img src="./images/img.png/teo.jpg" width="120" height="120" alt="Theo">
+                    </picture>
+                </li>
+                <li class="judges__item">
+                    <form action="" class="player-form" autocomplete="off">
+                        <label class="form-hidden" for="user_job">
+                            <input class="subscriber-job" type="text" name="job" id="user_job" placeholder="Руководитель"/>
+                        </label>
+                    </form>
+                </li>
+            </ul>
+            <ul class="judges__list list">
+                <li class="judges__item">
+                    <picture class="player__picture">
+                        <img src="./images/img.png/teo.jpg" width="120" height="120" alt="Theo">
+                    </picture>
+                </li>
+                <li class="judges__item">
+                    <form action="" class="player-form" autocomplete="off">
+                        <label class="form-hidden" for="user_job">
+                            <input class="subscriber-job" type="text" name="job" id="user_job" placeholder="Коллеги"/>
+                        </label>
+                       <label class="form-hidden" for="user_job">
+                            <input class="subscriber-job" type="text" name="job" id="user_job" placeholder="Коллеги"/>
+                        </label>
+                    </form>
+                </li>
+            </ul>
+            <ul class="judges__list list">
+                <li class="judges__item">
+                    <picture class="player__picture">
+                        <img src="./images/img.png/teo.jpg" width="120" height="120" alt="Theo">
+                    </picture>
+                </li>
+                <li class="judges__item">
+                    <form action="" class="player-form" autocomplete="off">
+                        <label class="form-hidden" for="user_job">
+                            <input class="subscriber-job" type="text" name="job" id="user_job" placeholder="Партнеры"/>
+                        </label>
+                        <label class="form-hidden" for="user_job">
+                            <input class="subscriber-job" type="text" name="job" id="user_job" placeholder="Партнеры"/>
+                        </label>
+                        <label class="form-hidden" for="user_job">
+                            <input class="subscriber-job" type="text" name="job" id="user_job" placeholder="Партнеры"/>
+                        </label>
+                    </form>
+                </li>
+            </ul>
+            </div>                
+        </div>
+    </div>
+</section>
+
+
+ </main>
+  <!--Attic-->
+  <footer class="footer section">
+    <div class="footer-container container">
+        <div class="footer-blog">
+            <div class="about">
+                <ul class="about__list list">
+                    <li class="about__item">О нас</li>
+                    <li class="about__item">Отзывы</li>
+                    <li class="about__item">Вакансии</li>
+                </ul>
+            </div>
+            <div class="box-logo">
+                <a href="" class="header-logo">
+                    <img src="./images/img.png/logo.png" class="header-logo__icon" alt="Логотип" width="40" height="40">
+                </a>
+            </div>
+            <div class="contact">
+                <ul class="contact__list list">
+                    <li class="contact__item">г. Одесса, ул. Грушевского, хх</li>
+                    <li class="contact__item">
+                        <a href="mailto:info@devstudio.com" class="footer-text__adress">info@devstudio.com</a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="tel:+380961111111" class="footer-text__adress">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="join">
+            <ul class="join-list list">
+                <li class="join-list__item">
+                    <a href="" class="join-list__link"href aria-label="instagram" target="_blank" >
+                        <svg class="join-list__icon" width="20" height="20">
+                            <use href="./images/img.svg/sprite-socialnetwork.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="join-list__item">
+                    <a href="" class="join-list__link" aria-label="facebook" target="_blank">
+                        <svg class="join-list__icon" width="20" height="20">
+                            <use href="./images/img.svg/sprite-socialnetwork.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="join-list__item">
+                    <a href="" class="join-list__link" aria-label="link" target="_blank">
+                        <svg class="join-list__icon" width="20" height="20">
+                            <use href="./images/img.svg/sprite-socialnetwork.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </footer>
+  
+  </body>

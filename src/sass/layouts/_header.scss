@@ -2,7 +2,7 @@
 .header {   
     left: 0;
     right: 0;
-    width: 1400px;
+    width: 100%;
     height: 65px; 
 
     background-color: #ffffff;
@@ -49,4 +49,67 @@ height: 4px;
 border-radius: 2px;
 background-color: var(--accent-bc);    
 }
+/* LAYOUTS__________________________________*/
+/*header*/ 
+/*/Заглавная страница_____________*/
+.page-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 65px;
+    backdrop-filter: blur(1px);
+    z-index: 100;
+
+   /* padding-left: 20px;
+    padding-right: 60px;*/
+}
+.main-div {   
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+   
+     padding-right: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+.header-button__log {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 43px;
+    padding-right: 43px;
+    margin-right: 12px;
+    border: transparent;
+    border-radius: 5px;
+    background-color: var(--accent-bc);
+
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--herotitle);   
+}
+.header-button__register {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 34px;
+    padding-right: 34px;
+    border-color: 1px var(--accent-bc);
+    border-radius: 5px;
+    background-color: var(--herotitle);
+
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--accent-bc);    
+}
+.header-menu__btn {
+display: none;
+}
+.header-navigation {
+    display: none;
+}    
+
 
